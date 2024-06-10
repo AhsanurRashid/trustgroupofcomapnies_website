@@ -1,21 +1,20 @@
 const Conatct = () => {
   return (
     <div className="bg-green-800">
-      <div className="w-[80%] mx-auto py-20 flex items-center gap-8">
-        <div className="w-1/2">
+      <div className="w-[80%] mx-auto lg:py-20 md:py-16 py-10 flex lg:flex-row flex-col items-center gap-8">
+        <div className="lg:w-1/2 w-full">
           <iframe
-            className="w-full"
+            className="w-full lg:h-[450px] md:h-[350px] h-[250px]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.6101833231755!2d90.39586987516743!3d23.86797227859031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c4249de6c4bb%3A0xdc53cb18cb983f75!2sTrust%20group!5e0!3m2!1sen!2sbd!4v1717960421610!5m2!1sen!2sbd"
-            height="450"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div className="w-1/2">
-          <div className="grid grid-cols-2 gp-6 mb-7">
-            <div className="text-white text-sm font-extralight">
+        <div className="lg:w-1/2 w-full">
+          <div className="grid md:grid-cols-2 grid-cols-1 gp-6 mb-7">
+            <div className="text-white md:text-sm text-xs font-extralight md:mb-0 mb-2">
               <div className="flex items-center gap-1">
                 <div>
                   <svg
@@ -38,8 +37,8 @@ const Conatct = () => {
                 <div>Dhaka 1230</div>
               </div>
             </div>
-            <div className="text-white text-sm font-extralight">
-              <div className="flex items-center gap-1">
+            <div className="text-white md:text-sm text-xs font-extralight">
+              <div className="flex items-center gap-1 md:mb-0 mb-2">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -74,20 +73,20 @@ const Conatct = () => {
           </div>
           <from className="flex flex-col gap-4">
             <input
-              className="outline-none px-6 py-3 text-xl font-extralight text-slate-700"
+              className="outline-none px-6 py-3 xl:text-xl lg:text-lg md:text-md sm:text-sm text-xs font-extralight text-slate-700"
               placeholder="Name"
             />
             <input
-              className="outline-none px-6 py-3 text-xl font-extralight text-slate-700"
+              className="outline-none px-6 py-3 xl:text-xl lg:text-lg md:text-md sm:text-sm text-xs font-extralight text-slate-700"
               placeholder="Email"
             />
             <textarea
               rows={5}
-              className="outline-none px-6 py-3 text-xl font-extralight text-slate-700"
+              className="outline-none px-6 py-3 xl:text-xl lg:text-lg md:text-md sm:text-sm text-xs font-extralight text-slate-700"
               placeholder="Message"
             />
-            <div>
-              <button className="px-6 py-3 text-xl font-extralight bg-green-500 text-white transform translate duration-150 delay-150 border border-green-500 hover:bg-transparent hover:text-green-500">
+            <div className="flex items-center md:justify-start justify-center">
+              <button className="px-6 py-3 xl:text-xl lg:text-lg md:text-md sm:text-sm text-xs font-extralight bg-green-500 text-white transform translate duration-150 delay-150 border border-green-500 hover:bg-transparent hover:text-green-500">
                 Send Message
               </button>
             </div>

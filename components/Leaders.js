@@ -6,7 +6,7 @@ import Md from '@/assets/images/leaders/md.jpeg'
 const Leaders = () => {
   return (
     <div className="border-t border-green-500 bg_banner">
-        <div className='flex items-center justify-center gap-8 py-8 bg-blur'>
+        <div className='flex md:flex-row flex-col items-center justify-center gap-8 py-8 bg-blur'>
             <div>
                 <div className='relative w-[275px] h-[340px] mb-3 leader-img'>
                     <Image 

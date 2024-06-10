@@ -21,7 +21,7 @@ const page = () => {
         <MainSlider />
       </section>
       <section>
-        <Banner />
+        <Banner /> 
       </section>
       <section>
         <Images />

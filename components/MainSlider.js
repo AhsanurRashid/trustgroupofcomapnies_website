@@ -26,7 +26,7 @@ const MainSlider = () => {
       { mainSliderImages.map((item, index) => {
         return (
           <SwiperSlide key={`${item}_${index}`}>
-            <div className='relative w-full h-svh'>
+            <div className='relative w-full xl:h-[100vh] lg:h-[80vh] md:h-[70vh] sm:h-[60vh] h-[50vh]'>
               <Image 
                 src={item?.src}
                 alt={item?.alt}
