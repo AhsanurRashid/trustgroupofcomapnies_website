@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import logo from '@/assets/images/logo.jpeg'
+import FooterNavs from '@/components/FooterNavs'
 
 const Footer = () => {
   return (
@@ -26,23 +27,7 @@ const Footer = () => {
                 </div>
                 
                 <div>
-                    <ul className='flex flex-col xl:gap-6 lg:gap-4 md:gap-3 gap-2 xl:text-xl lg:text-lg sm:text-sm text-xs uppercase font-extralight'>
-                        <li className='text-white text-center cursor-pointer transform translate duration-75 delay-75 ease-in-out hover:text-gray-300'>
-                            <a href=''>about us</a>
-                        </li>
-                        <li className='text-white text-center cursor-pointer transform translate duration-75 delay-75 ease-in-out hover:text-gray-300'>
-                            <a href=''>projects</a>
-                        </li>
-                        <li className='text-white text-center cursor-pointer transform translate duration-75 delay-75 ease-in-out hover:text-gray-300'>
-                            <a href=''>organizations</a>
-                        </li>
-                        <li className='text-white text-center cursor-pointer transform translate duration-75 delay-75 ease-in-out hover:text-gray-300'>
-                            <a href=''>team</a>
-                        </li>
-                        <li className='text-white text-center cursor-pointer transform translate duration-75 delay-75 ease-in-out hover:text-gray-300'>
-                            <a href=''>contact</a>
-                        </li>
-                    </ul>
+                    <FooterNavs />
                 </div>
                 <div className='flex items-center md:justify-end justify-center md:gap-4 gap-2'>
                     <div className='md:w-16 w-10 md:h-16 h-10 cursor-pointer'>

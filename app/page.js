@@ -8,6 +8,7 @@ import Partners from "@/components/Partners"
 import Leaders from "@/components/Leaders"
 import Contact from "@/components/Conatct"
 import Footer from "@/components/Footer"
+import Scroll from "@/components/Scroll"
 
 const page = () => {
   return (
@@ -17,28 +18,29 @@ const page = () => {
           <Header/>
         </div>
       </header>
-      <section>
+      <section className="relative">
         <MainSlider />
+        <Scroll />
       </section>
-      <section>
+      <section id="banner-section">
         <Banner /> 
       </section>
-      <section>
+      <section id="projects-section">
         <Images />
       </section>
       <section>
         <Newslatter />
       </section>
-      <section>
+      <section id="about-section">
         <About />
       </section>
-      <section>
-        <Partners/>
+      <section id="organization-section">
+        <Partners />
       </section>
-      <section>
+      <section id="team-section">
         <Leaders />
       </section>
-      <section>
+      <section id="contact-section">
         <Contact/>
       </section>
       <footer>
